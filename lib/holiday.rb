@@ -50,10 +50,14 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-apple = holiday_hash.to_s
-bananna = apple.split
-cantulope = bananna.capitalize!
-dejango = cantulope.join
+  holiday_hash.each do |key, values|
+    puts key.to_s
+    values.each do |atrr, value|
+      apple = atrr.to_s
+      cat = value.to_s
+      puts apple + cat
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
