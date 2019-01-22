@@ -50,7 +50,8 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
-  holiday_hash.to_s
+apple = holiday_hash.to_s
+apple.capitalize
 
 end
 
