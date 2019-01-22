@@ -51,8 +51,9 @@ end
 
 def all_supplies_in_holidays(holiday_hash)
 apple = holiday_hash.to_s
-apple.capitalize
-
+bananna = apple.split
+cantulope = bananna.capitalize
+dejango = cantulope.join
 end
 
 def all_holidays_with_bbq(holiday_hash)
