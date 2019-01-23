@@ -52,7 +52,8 @@ end
 def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |key, values|
     key1 = key.to_s
-    puts key1.capitalize << ":"
+    key2 = key1 <<":"
+    puts key2.capitalize
     values.each do |atrr, value|
       apple = atrr.to_s
       apple1= apple.split
