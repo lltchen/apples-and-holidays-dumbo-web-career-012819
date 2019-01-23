@@ -56,9 +56,9 @@ def all_supplies_in_holidays(holiday_hash)
     puts key2.capitalize
     values.each do |atrr, value|
       apple = atrr.to_s.capitalize
-      cat = value.to_s
-      
-      puts apple + cat
+      cat = value
+
+      puts apple + ":" + cat
     end
   end
 end
