@@ -55,7 +55,7 @@ def all_supplies_in_holidays(holiday_hash)
     key2 = key1 <<":"
     puts key2.capitalize
     values.each do |atrr, value|
-      apple = atrr.to_s.titleize
+      apple = atrr.to_s.titleize.gsub('_',' ')
       cat = value.to_s.gsub("[","").gsub('"','').gsub(']','')
       puts "  " + apple + ": " + cat
     end
